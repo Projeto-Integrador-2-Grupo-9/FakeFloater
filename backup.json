@@ -1,0 +1,23 @@
+{
+    "001": {
+        "mac_address": "1A:4B:F6:F8:15:81",
+        "starting_position": {
+            "lat": -15.8326,
+            "lng": -47.8477
+        }
+    },
+    "002": {
+        "mac_address": "1B:4B:F6:F8:15:82",
+        "starting_position": {
+            "lat": -15.8345,
+            "lng": -47.8440
+        }
+    },
+    "003": {
+        "mac_address": "1C:4B:F6:F8:15:83",
+        "starting_position": {
+            "lat": -15.8264,
+            "lng": -47.8427
+        }
+    }
+}

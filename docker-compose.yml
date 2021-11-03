@@ -1,0 +1,12 @@
+version: '3.1'
+services:
+  fake_floater:
+    container_name: fake_floater
+    env_file:
+      - .env
+    build: .
+    volumes:
+      - .:/code
+    ports:
+      - "5001:5001"
+    command: python start-dev.py
