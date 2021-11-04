@@ -83,13 +83,17 @@ class FakeFloater:
         rand_lng = float("{:.4f}".format((random.uniform(-1, 1)/1000) +
                                          self.current_position["lng"]))
 
+        timestamp = strftime("%Y-%m-%d %H:%M:%S", gmtime())
+
         self.current_position = {
             "lat": rand_lat,
             "lng": rand_lng
         }
 
         payload = json.dumps({"device": self.mac_address,
-                              "current_position": self.current_position})
+                              "current_position": self.current_position,
+                              "timestamp": timestamp}
+                             )
 
         self.mqtt_client.publish("AD/position_data", payload)
 
